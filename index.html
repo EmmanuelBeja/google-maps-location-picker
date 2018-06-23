@@ -153,7 +153,7 @@
                 document.getElementById('Location').setAttribute('value',addrs);
               }
             };
-            xhttp.open("GET", "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&key=AIzaSyAye4m-oKGsEFaiYcNwta0XR_pdW2UPBek", true);
+            xhttp.open("GET", "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&key=YOURAPIKEY", true);
             xhttp.send();
 
         };
@@ -162,7 +162,7 @@
         //Load the map when the page has finished loading.
         google.maps.event.addDomListener(window, 'load', initMap);
         </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAye4m-oKGsEFaiYcNwta0XR_pdW2UPBek&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&callback=initMap">
                           </script>
 </body>
 </html>
